@@ -70,6 +70,6 @@
       # The default package for 'nix build'. This makes sense if the
       # flake provides only one package or there is a clear "main"
       # package.
-      defaultPackage = forAllSystems (system: self.packages.${system}.ec2-instance-selector);
+      defaultPackage = forAllSystems (system: self.packages.${system}.default);
     };
 }
